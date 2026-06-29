@@ -1,0 +1,28 @@
+server:
+  port: 8102
+
+spring:
+  application:
+    name: hotel-guide-service
+
+  datasource:
+    url: jdbc:mysql://117.72.208.68:3306/hotel_trade?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: agent_user
+    password: Agent@123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+hotel:
+  supply:
+    base-url: http://localhost:8101
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{traceId}] %logger{36} - %msg%n"
+  level:
+    root: info
+    com.hotel: debug

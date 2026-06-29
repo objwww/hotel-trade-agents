@@ -1,13 +1,11 @@
-package com.hotel.agents;
-
+package com.hotel.gateway;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HotelTradeAgentsApplication {
+public class GatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HotelTradeAgentsApplication.class, args);
+        SpringApplication.run(GatewayApplication.class, args);
     }
-
 }
