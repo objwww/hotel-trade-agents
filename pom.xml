@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
@@ -17,7 +17,12 @@
         <module>hotel-gateway</module>
         <module>hotel-supply-service</module>
         <module>hotel-guide-service</module>
-    </modules>
+        <module>hotel-trade-service</module>
+        <module>hotel-checkout-service</module>
+        <module>hotel-admin-service</module>
+        <module>hotel-fulfillment-service</module>
+    <module>hotel-agent-service</module>
+</modules>
 
     <properties>
         <java.version>17</java.version>
@@ -34,7 +39,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- Spring Boot 依赖版本统一管理 -->
+            <!-- Spring Boot 渚濊禆鐗堟湰缁熶竴绠＄悊 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -43,7 +48,7 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- Spring Cloud 依赖版本统一管理 -->
+            <!-- Spring Cloud 渚濊禆鐗堟湰缁熶竴绠＄悊 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -78,7 +83,7 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!-- Java 17 编译配置，防止默认用老版本 Java 编译 -->
+                <!-- Java 17 缂栬瘧閰嶇疆锛岄槻姝㈤粯璁ょ敤鑰佺増鏈?Java 缂栬瘧 -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -89,7 +94,7 @@
                     </configuration>
                 </plugin>
 
-                <!-- Spring Boot 打包插件 -->
+                <!-- Spring Boot 鎵撳寘鎻掍欢 -->
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
